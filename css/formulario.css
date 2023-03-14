@@ -1,0 +1,105 @@
+/*MAIN - FORMS*/
+
+.body {
+  background: url(../assets/background4.png) no-repeat center top;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container {
+  background-color: #faf9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+main .header {
+  background-color: rgb(226, 224, 224);
+  padding: 20px;
+}
+
+.form {
+  padding: 5px;
+}
+
+.form-control {
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-control i {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  margin-bottom: 35px;
+  padding-bottom: 5px;
+  left: 0;
+  visibility: hidden;
+}
+
+.form button {
+  background-color: #f03131;
+  border: 2px solid #f03131;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.form button:hover {
+  background-color: #fa2323;
+}
+
+/* Error and Success */
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
